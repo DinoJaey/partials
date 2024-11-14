@@ -50,6 +50,19 @@
                 </svg></a>
             </div>
             </div>
+            <section class="mobile-navbar">
+                <div class="mobile-menu">
+                    <div class="btn menu-btn">
+                        <input type="checkbox" id="toggle" aria-label="hamburger menu toggle">
+                        <span class="first-line"></span>
+                        <span class="second-line"></span>
+                        <span class="third-line"></span>
+                    </div>
+                </div>
+            </section>
+
+            
+
             <div class="links-container">
                     <ul class="flex-list">
                         <li class="book-now"><a href="#">Book Now</a></li>
@@ -71,7 +84,24 @@
         </div>
     </section>
 
-    <section></section>
+    <section id="about">
+        <div class="about-store-container">
+            <div class="about-card">
+                <div class="header-container">
+                    <h2>Store Hours</h2>
+                </div>
+            <p>Mon - Sat 10 AM - 7:30 PM</p>
+            </div>
+
+            <div class="about-card" id="about-us">
+                <div class="header-container">
+                    <h2>About Us</h2>
+                </div>
+                <p>At Chrysalis Nail Society, we believe that every detail matters when it comes to self-care and beauty. Nestled in the heart of our community, we offer a serene, luxurious space where you can unwind and indulge in high-quality nail services. Our talented team is dedicated to creating unique, personalized experiences that leave you feeling refreshed and confident. From classic manicures to creative nail art, Chrysalis Nail Society is where transformation meets relaxation&mdash;because you deserve to shine with your unique beauty.</p>
+            </div>
+           
+        </div>
+    </section>
 
     <section id="services" class="services">
         <div class="header-container">
@@ -118,9 +148,9 @@
             <h2>Contact Us</h2>
         </div>
         <form id="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="tel" placeholder="Phone" required>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <input type="tel" name="Phone" placeholder="Phone" required>
           <textarea rows="5" cols="60" name="message" placeholder="Type here..." autocomplete="off" required></textarea>
           <button type="submit">Submit</button>
         </form>
@@ -135,18 +165,18 @@
       <footer class="footer">
         <div class="footer-container">
             <div class="row">
-            <div class="footer-col">
-                <h4>Find An Answer</h4>
+            <div class="footer-col faq-container">
+                <h2>Find An Answer</h2>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
                     <li><a href="#">Accessibility Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Gift Card Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>About Us</h4>
+                <h2>About Us</h2>
                 <ul>
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Careers</a></li>
@@ -155,12 +185,10 @@
                 </ul>
             </div>
             <div class="footer-col social-links">
-                <h4>Socials</h4>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <h2>Socials</h2>
+                <a href="#" aria-label="Link to Chrysalis Nail Society Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Link to Chrysalis Nail Society Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Link to Chrysalis Nail Society Yelp"><i class="fab fa-yelp"></i></a>
             </div>
         </div>
         </div>

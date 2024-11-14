@@ -46,3 +46,32 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("orientationChange", lazyload);
     }
   })
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('toggle');
+    const flexList = document.querySelector('.flex-list');
+    const linksContainer = document.querySelector('.links-container');
+  
+    function handleInputChange() {
+        if (window.matchMedia('(max-width: 768px)').matches) { // Adjust breakpoint as needed
+        if (input.checked) {
+        flexList.style.display = 'flex';
+        linksContainer.style.padding = '20px';
+        }
+        else {
+            flexList.style.display = 'none';
+            linksContainer.style.padding = '0';
+            }
+        }
+        else {
+        // Optional: Reset styles when not in mobile view
+            flexList.style.display = '';
+            linksContainer.style.padding = '';
+        }
+    }
+
+    input.addEventListener('change', handleInputChange);
+
+    // Optional: Also check and reset on window resize
+    window.addEventListener('resize', handleInputChange);
+    });
