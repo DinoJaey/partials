@@ -146,8 +146,9 @@ svg path {
     text-decoration: none;
     color: var(--text-color);
     background-color: var(--color-1);
-    padding: 0.35rem 1rem;
-    font-weight: 800;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
@@ -160,13 +161,13 @@ svg path {
   .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: var(--text);
+    color: var(--text-color);
   }
   
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--text);
+    color: var(--text-color);
   }
 
 .services {
