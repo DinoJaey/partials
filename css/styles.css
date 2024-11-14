@@ -46,7 +46,7 @@ nav ul {
     text-decoration: none;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
@@ -74,7 +74,9 @@ nav li {
 }
 
 .book-now {
-    background-color: var(--color-6);
+    background: linear-gradient(135deg, #E6E6FA, #D8BFD8, #B0A7D8, #D8BFD8, #E6E6FA);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
     height: 32px;
 }
 
@@ -144,6 +146,19 @@ svg path {
         stroke-dashoffset: 0;
     }
 }
+
+@keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
 
 .hero {
     padding-top: 150px;
