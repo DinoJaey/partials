@@ -51,9 +51,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const input = document.getElementById('toggle');
     const flexList = document.querySelector('.flex-list');
     const linksContainer = document.querySelector('.links-container');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navDropdown = document.querySelector('.nav-dropdown');
+
+    navDropdown.hidden = true;
+    dropdownToggle.setAttribute('aria-expanded', 'false');
   
+    
+
     function handleInputChange() {
-        if (window.matchMedia('(max-width: 768px)').matches) { // Adjust breakpoint as needed
+        if (window.matchMedia('(max-width: 942px)').matches) { // Adjust breakpoint as needed
+
+        if (event.key === 'Enter') {
+          input.checked = !input.checked; // Toggle the checked state
+          event.preventDefault(); // Prevent default behavior, if any
+        }
+        
         if (input.checked) {
         flexList.style.display = 'flex';
         linksContainer.style.padding = '20px';
@@ -69,6 +82,14 @@ document.addEventListener("DOMContentLoaded", function() {
             linksContainer.style.padding = '';
         }
     }
+
+    dropdownToggle.addEventListener('click', () => {
+      const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+      dropdownToggle.setAttribute('aria-expanded', !isExpanded);
+      navDropdown.hidden = isExpanded;
+    });
+    
+    input.addEventListener('keydown', handleInputChange);
 
     input.addEventListener('change', handleInputChange);
 
