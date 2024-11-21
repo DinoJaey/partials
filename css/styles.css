@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-nav.navigation-links {
-    height: 100%;
-}
-
 :root {
     --color-1: #b6bafb;
     --color-2: #D4D6fc;
@@ -88,6 +84,10 @@ nav li {
     transition: 0.2s ease-in-out;
 }
 
+nav ul.nav-dropdown li a {
+    box-shadow: none;
+}
+
 .book-now {
     background: linear-gradient(135deg, #E6E6FA, #D8BFD8, #B0A7D8, #D8BFD8, #E6E6FA);
     background-size: 200% 200%;
@@ -112,8 +112,17 @@ nav li.nav-hover:hover, nav li.nav-hover:focus {
     height: 28px;
 }
 
+.nav-dropdown {
+    gap: 0;
+    z-index: 1000;
+}
+
 .nav-dropdown[hidden] {
-  display: none;
+    display: none;
+}
+
+#services-dropdown:hover .nav-dropdown, #services-dropdown:focus .nav-dropdown {
+    display: flex;
 }
 
 .dropdown-toggle {
@@ -134,41 +143,43 @@ nav li.nav-hover:hover, nav li.nav-hover:focus {
 }
 
 .services-and-icon a {
-    width: 90%;
-    margin-left: 10%;
+    width: 100%;
+    transition: 0.2s ease-in-out;
 }
 
 .services-and-icon span {
-    
-    width: 10%;
+    display: none;
+    width: 15%;
     justify-content: flex-end;
-    margin-right: 10px;
+    align-content: center;
+    height: 28px;
 }
 
-nav li a span.dropdown-icon {
-    transform: rotate(90deg);
-}
-
-.nav-dropdown {
-    gap: 0;
-    z-index: 1000;
+.services-and-icon span:hover, .services-and-icon span:focus {
+    background: #d4d6fc2e;
 }
 
 .nav-dropdown li { 
     background: white;
-    border: solid 0.07px rgba(0, 0, 0, 0.097);
+    border: solid 0.02px #d4d6fc63;
     border-radius: 0;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
-    z-index: 999;
-}
-
-.nav-dropdown li a {
-    font-size: .92rem;
     z-index: 1000;
 }
 
-nav div.logo-container {
+.nav-dropdown li a {
+    color:rgba(0, 0, 0, 0.7);
+    font-size: .92rem;
+    transition: 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+.nav-dropdown li a:hover {
+    transform: translateY(-5px);
+}
+
+.logo-container {
     display: flex;
     justify-content: center;
     height: 150px;
@@ -182,7 +193,7 @@ nav div.logo-container {
     align-items: center;
 }
 
-nav div svg {
+.logo a svg {
     height: 80px;
     width: auto;
 }
@@ -556,12 +567,40 @@ svg path {
 
 @media (max-width: 942px) {
 
+    .navigation-links {
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        height: 100%;
+        background: #f6f3f7d0;
+        backdrop-filter: blur(4px);
+    }
+
     .flex-list {
         display: none;
     }
 
+    .services-and-icon a {
+        width: 85%;
+        padding-left: 15%;
+        transition: 0.2s ease-in-out;
+    }
+
+    .services-and-icon span {
+        display: block;
+    }
+
     #services-dropdown-container {
         height: 100%;
+    }
+
+    .services-and-icon span {
+        align-content: center;
+        height: 45px;
+    }
+
+    .services-and-icon span:hover, .services-and-icon span:focus {
+        height: 45px;
     }
 
     nav div.links-container {
@@ -631,22 +670,27 @@ svg path {
 
     nav li {
         width: 100%;
-        height: 35px;
-        gap: 2rem;
+        height: 45px;
+        border: solid 0.02px #d4d6fc63;
     }
 
     nav li a {
         width: 100%;
-        height: 35px;
+        height: 45px;
+    }
+
+    .book-now, .book-now a {
+        height: 45px;
     }
 
     .flex-list {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
 
     nav ul {
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .footer-col {

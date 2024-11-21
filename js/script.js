@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const linksContainer = document.querySelector('.links-container');
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const navDropdown = document.querySelector('.nav-dropdown');
+    const dropdownContainer = document.getElementById('services-dropdown-container');
 
     navDropdown.hidden = true;
     dropdownToggle.setAttribute('aria-expanded', 'false');
@@ -87,6 +88,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
       dropdownToggle.setAttribute('aria-expanded', !isExpanded);
       navDropdown.hidden = isExpanded;
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!dropdownContainer.contains(event.target)) {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        navDropdown.hidden = true;
+      }
     });
     
     input.addEventListener('keydown', handleInputChange);

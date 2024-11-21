@@ -52,42 +52,54 @@
             </div>
             
         </nav>
-
-        <nav>
-            <section class="mobile-navbar">
-                <div class="mobile-menu">
-                    <div class="btn menu-btn">
-                        <input type="checkbox" id="toggle" aria-label="hamburger menu toggle">
-                        <span class="first-line"></span>
-                        <span class="second-line"></span>
-                        <span class="third-line"></span>
-                    </div>
-                </div>
-            </section>
-
-            
-
-            <div class="links-container">
-                    <ul class="flex-list">
-                        <li class="book-now"><a href="#">Book Now</a></li>
-                        <li>
-                            <a href="/services">Services</a>
-                        </li>
-                        <li><a href="/salon-etiquette" class="nav-button">Salon Etiquette</a></li>
-                        <li><a href="/c-society-events">C Society Events</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/affiliates">Affiliates</a></li>
-                        <li><a href="#">Gift Card</a></li>
-                    </ul>
-            </div>
-        </nav>
-
       </header>
 
-      <main>
+      <nav class="navigation-links">
+        <section class="mobile-navbar">
+            <div class="mobile-menu">
+                <div class="btn menu-btn">
+                    <input type="checkbox" id="toggle" aria-label="hamburger menu toggle">
+                    <span class="first-line"></span>
+                    <span class="second-line"></span>
+                    <span class="third-line"></span>
+                </div>
+            </div>
+        </section>
 
-      </main>
+        
 
+        <div class="links-container">
+                <ul class="flex-list">
+                    <li class="book-now nav-hover"><a href="#">Book Now</a></li>
+                    <li id="services-dropdown-container">
+                        <div class="services-dropdown-container" id="services-dropdown">
+                            <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle services dropdown"> 
+                            <div class="services-and-icon">
+                                <a href="/services">Services</a>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            </button>
+                        <ul class="nav-dropdown">
+                            <li><a href="/services/headspa">Headspa</a></li>
+                            <li><a href="/services/manicure">Manicure</a></li>
+                            <li><a href="services/nail-enhancements">Nail Enhancements</a></li>
+                            <li><a href="servcices/pedicure">Pedicure</a></li>
+                            <li><a href="services/waxing">Waxing</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="nav-hover"><a href="/salon-etiquette" class="nav-button">Salon Etiquette</a></li>
+                    <li class="nav-hover"><a href="/c-society-events">C Society Events</a></li>
+                    <li class="nav-hover"><a href="/gallery">Gallery</a></li>
+                    <li class="nav-hover"><a href="/affiliates">Affiliates</a></li>
+                    <li class="nav-hover"><a href="#">Gift Card</a></li>
+                </ul>
+        </div>
+    </nav>
+    
+    <main class="background">
+
+    </main>
     <section id="booking">
         <div class="header-container">
             <h2>Contact Us</h2>
@@ -138,7 +150,7 @@
         </div>
         </div>
     </footer>
-</main>
+
     </div>    
 
     
