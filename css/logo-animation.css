@@ -1,0 +1,23 @@
+svg path {
+    fill: transparent;
+    stroke: var(--text-color);
+    stroke-width: 1;
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 1150;
+    }
+    80% {
+        fill: transparent;
+    }
+    100% {
+        fill: var(--text-color);
+        stroke-dashoffset: 0;
+    }
+}
