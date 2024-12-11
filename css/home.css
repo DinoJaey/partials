@@ -1,7 +1,10 @@
 
+  
   #contact-container {
-    width: 75%;
-    margin: 25px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    max-width: 1000px;
+    padding: 15px;
     background-color: var(--color-2);
     border-radius: 3px;
   }
@@ -9,13 +12,13 @@
   #contact-booking-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 
   .business-info {
-    width: 400px;
-    height: 400px;
-    margin: 10px;
+    max-width: 400px;
     justify-items: center;
+    align-items: center;
   }
 
   #contact-us {
@@ -23,7 +26,7 @@
     height: auto;
     max-width: 800px;
     justify-items: center;
-    display: relative;
+    align-items: center;
   }
 
   .contact-header {
@@ -33,30 +36,25 @@
   }
 
   #contact-us .business-info ul {
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #contact-us .business-info li.business-hours {
+  #contact-us .business-info ul li.business-hours {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 7px 0;
   }
 
-  #contact-us .business-info li { 
+  .no-leading-zero {
+    padding-left: 8px;
+  }
+
+  #contact-us div ul .info-item { 
     padding: 3px 0;
+    margin: 12px 0;
   }
-
-  .contact-info {
-    width: 400px;
-    height: 300px;
-    margin: 10px;
-    align-items: center;
-  }
-  
 
   .business-info li a {
     color: var(--text-color);
@@ -66,20 +64,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 1rem;
+    flex-shrink: 1;
+    align-items: center;
     background: var(--secondary);
   }
 
   .contact-socials-container {
+    width: 400px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25px;
+    align-items: center;
+  }
+
+  .contact-socials-container div {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-socials-container div a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0 5px 0 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+  }
+
+  .contact-socials-container div a:hover {
+    color: var(--color-3);
+    background: none;
   }
   
   #contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     gap: 1rem;
   }
@@ -118,13 +143,24 @@
 
 .google-map {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: 100%;
-    text-align: center;
-    padding: 15px 50px;
+    margin: 25px auto;
+    display: flex;
 }
 
 .google-map iframe {
   width: 100%;
   height: 250px;
+  flex-shrink: 1;
+}
+
+@media (max-width: 1168px) {
+  #contact-container {
+    max-width: 800px;
+  }
+  #contact-booking-container {
+    max-width: 800px;
+    grid-template-columns: 1fr;
+  }
 }

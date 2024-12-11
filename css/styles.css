@@ -114,6 +114,7 @@ nav ul.nav-dropdown li a {
     text-decoration: none;
     height: 40px;
     width: 150px;
+    text-align: center;
     color: var(--text-color);
     padding: 0.5rem 1.25rem;
     font-size: 1.5rem;
@@ -223,12 +224,6 @@ nav div.links-container {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.book-centered {
-    order: 0;
-    margin: auto;
-    flex-grow: 2;
 }
 
 

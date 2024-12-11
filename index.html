@@ -82,7 +82,7 @@
                 <ul class="flex-list">
                     <li class="book-now nav-hover"><a href="#">Book Now</a></li>
                     <li class="nav-hover"><a href="/">Home Page</a></li>
-                    <li class="nav-hover" id="services-dropdown-container">
+                    <li classid="services-dropdown-container">
                         <div class="services-dropdown-container" id="services-dropdown">
                             <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle services dropdown"> 
                             <div class="services-and-icon">
@@ -92,10 +92,10 @@
                             </button>
                         <ul class="nav-dropdown">
                             <li><a href="/services/exclusive-experiences">Exclusive Experiences</a></li>
-                            <li><a href="/services/manicure">Manicures</a></li>
-                            <li><a href="/services/pedicure">Pedicures</a></li>
-                            <li><a href="/services/nail-enhancement">Nail Enhancements</a></li>
-                            <li><a href="/services/add-on">Add-ons</a></li>
+                            <li><a href="/services/manicures">Manicures</a></li>
+                            <li><a href="/services/pedicures">Pedicures</a></li>
+                            <li><a href="/services/nail-enhancements">Nail Enhancements</a></li>
+                            <li><a href="/services/add-ons">Add-ons</a></li>
                             <li><a href="/services/lashes-waxing">Lashes &amp; Waxing</a></li>
                         </ul>
                         </div>
@@ -115,23 +115,27 @@
         
         <div class="business-info">
         <ul>
-            <li><h3>Business Hours</h3></li>
-            <li class="business-hours"><span>Monday - Friday: </span><span>10:00 AM - 7:30 PM</span></li>
-            <li class="business-hours"><span>Saturday: </span><span>9:00 AM - 7:00 PM</span></li>
-            <li class="business-hours"><span>Sunday: </span><span>11:00 AM - 6:00 PM</span></li>
-            <li>
+            <li class="info-item">
+                <h3>Business Hours</h3>
+                <ul>
+                    <li class="business-hours"><span>Monday - Friday: </span><span>10:00 AM - 7:30 PM</span></li>
+                    <li class="business-hours"><span>Saturday: </span><span class="no-leading-zero"> 9:00 AM - 7:00 PM</span></li>
+                    <li class="business-hours"><span>Sunday: </span><span>11:00 AM - 6:00 PM</span></li>
+                </ul>
+            </li>
+            <li class="info-item">
                 <h3>Phone</h3>
                 <a href="tel:+11112221111">214-...-....</a>
             </li>
-            <li>
+            <li class="info-item">
                 <h3>Text</h3>
             <a href="tel:+11112221111">214-...-....</a>
             </li>
-            <li>
+            <li class="info-item">
                 <h3>Email</h3>
                 <a href="mailto:info@cnailsociety.com">info@cnailsociety.com</a>
             </li>
-            <li>
+            <li class="info-item">
                 <h3>Address</h3>
                 <address>
                 17062 Preston Road, Suite 120<br>
@@ -140,36 +144,47 @@
             </li>
         </ul>
         </div>
-
+    </div>
+    <div id="booking">
+        
         <div class="google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.8045579069985!2d-96.80324449999999!3d32.982557799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2162b74beb47%3A0x5d2d1865d9609e71!2s17062%20Preston%20Rd%2C%20Dallas%2C%20TX%2075248!5e0!3m2!1sen!2sus!4v1733769946682!5m2!1sen!2sus"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    
-    </div>
-    <section id="booking">
-        <form id="contact-form">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Email" required>
-          <input type="tel" name="Phone" placeholder="Phone" required>
-          <textarea rows="5" cols="60" name="message" placeholder="Type here..." autocomplete="off" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
 
         <div class="contact-socials-container">
-            <h2>Socials</h2>
+            <a href="#" class="book-now book-button">Book Now</a>
             <div>
                 <a href="#" aria-label="Link to Chrysalis Nail Society Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" aria-label="Link to Chrysalis Nail Society Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" aria-label="Link to Chrysalis Nail Society Yelp"><i class="fab fa-yelp"></i></a>
             </div>
-            
-            <a href="#" class="book-now book-button">Book Now</a>
         </div>
-    </section>
+    </div>
 </div>
 </section>
-    </section>
+
+<section id="shop-video-section">
+
+</section>
+
+<section id="gift-certificate-section">
+    
+    <div>
+        <h2>Give the gift of Exclusive Experiences</h2>
+        <p>Insert text here</p>
+    </div>
+
+</section>
+
+<section id="about-us-section">
+    <div>
+        <h2>About Us</h2>
+        <p>
+            In an industry saturated with options, our mission is to redefine the nail salon experience by prioritizing health, quality, and customer satisfaction to the highest standards. As beauty enthusiasts and industry insiders, we aim to create a welcoming, inclusive space where clients can feel pampered and valued, knowing that their choices contribute to their personal well-being. Through our dedication to exceptional service and a commitment to sustainable practices, we strive to set a new standard in the beauty industry, making it easier for individuals to feel confident in their service and product selections.
+        </p>
+    </div>
+</section>
 </main>
       <footer class="footer">
         <div class="footer-container">

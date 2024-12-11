@@ -1,0 +1,46 @@
+.hero {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+#bg-image.lazy {
+    background: none;
+    background-color: var(--color-1);
+}
+
+#bg-image {
+    background: linear-gradient(rgba(230,230,250,0.9), rgba(230,230,250,0.9)),
+    url('https://images.unsplash.com/photo-1604654894610-df63bc536371') center/cover;
+}
+
+
+  
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+<section id="bg-image" class="hero lazy">
+<div class="hero-content">
+    <h1>Where Transformations Begin And Butterflies Are Born</h1>
+    <p></p>
+    <a href="#" class="book-now book-button">Book Your Visit</a>
+</div>
+</section>
