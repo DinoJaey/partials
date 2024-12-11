@@ -26,11 +26,13 @@ html, body, button {
 body {
     background-color: #f3e5f743;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     justify-items: center;
-
+    flex: 1;
 }
 
 * {
