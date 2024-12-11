@@ -382,7 +382,7 @@ nav div.links-container {
 }
 
 
-@media (max-width:1008px) {
+@media (max-width:1024px) {
 
     .row {
         justify-content: flex-start;
@@ -393,15 +393,6 @@ nav div.links-container {
         width: 50%;
         margin-bottom: 30px;
     }
-}
-
-@media (min-width: 942px) {
-    #services-dropdown:hover .nav-dropdown, #services-dropdown:focus .nav-dropdown {
-        display: flex;
-    }
-}
-
-@media (max-width: 942px) {
 
     .navigation-links {
         position: sticky;
@@ -534,12 +525,22 @@ nav div.links-container {
         justify-content: center;
     }
 
+    .mobile-button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 942px) {
+#services-dropdown:hover .nav-dropdown, #services-dropdown:focus .nav-dropdown {
+    display: flex;
+}
+}
+
+@media (max-width: 942px) {
+
+
     .footer-col {
         width: 100%;
         margin-bottom: 30px;
-    }
-
-    .mobile-button {
-        width: 100%;
     }
 }

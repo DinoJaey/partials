@@ -16,7 +16,7 @@
   }
 
   .business-info {
-    max-width: 50%;
+    max-width: 100%;
     justify-items: center;
     align-items: center;
   }
@@ -66,7 +66,7 @@
   }
 
   .contact-socials-container {
-    width: 50%;
+    width: 100%;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -113,11 +113,7 @@
 }
 
 @media (max-width: 1168px) {
-  #contact-container {
-    max-width: 100%;
-  }
   #contact-booking-container {
-    max-width: 100%;
     grid-template-columns: 1fr;
   }
   #contact-us {
