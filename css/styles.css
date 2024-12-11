@@ -25,9 +25,11 @@ html, body, button {
 
 body {
     background-color: #f3e5f743;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: scroll;
 }
 
 main {
@@ -115,7 +117,7 @@ nav ul.nav-dropdown li a {
 .book-button {
     text-decoration: none;
     height: 40px;
-    width: 150px;
+    width: 175px;
     text-align: center;
     color: var(--text-color);
     padding: 0.5rem 1.25rem;
@@ -408,6 +410,11 @@ nav div.links-container {
         height: 100%;
         background: #f6f3f7d0;
         backdrop-filter: blur(4px);
+    }
+
+    .logo a svg {
+        height: 60px;
+        width: auto;
     }
 
     .flex-list {

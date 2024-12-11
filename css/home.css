@@ -3,7 +3,7 @@
   #contact-container {
     width: 100%;
     margin: 0 0 10px 0;
-    max-width: 1000px;
+    max-width: 800px;
     padding: 15px;
     background-color: var(--color-2);
     border-radius: 3px;
@@ -16,15 +16,12 @@
   }
 
   .business-info {
-    max-width: 400px;
+    max-width: 50%;
     justify-items: center;
     align-items: center;
   }
 
   #contact-us {
-    width: 75%;
-    height: auto;
-    max-width: 800px;
     justify-items: center;
     align-items: center;
   }
@@ -64,13 +61,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 1;
     align-items: center;
     background: var(--secondary);
   }
 
   .contact-socials-container {
-    width: 400px;
+    width: 50%;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -101,45 +97,6 @@
     color: var(--color-3);
     background: none;
   }
-  
-  #contact-form {
-    max-width: 600px;
-    margin: 1rem auto;
-    display: grid;
-    gap: 1rem;
-  }
-
-  #contact-form * {
-    max-width: 600px;
-  }
-  
-  #contact-form input,
-  #contact-form select {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  #contact-form button {
-    padding: 1rem;
-    background: var(--color-6);
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
-  }
-  
-  #contact-form button:hover {
-    background: var(--color-7);
-    color: var(--text);
-  }
-
-  #contact-form textarea {
-    padding: 1rem;
-  }
 
 .google-map {
     width: 100%;
@@ -157,10 +114,36 @@
 
 @media (max-width: 1168px) {
   #contact-container {
-    max-width: 800px;
+    max-width: 100%;
   }
   #contact-booking-container {
-    max-width: 800px;
+    max-width: 100%;
     grid-template-columns: 1fr;
+  }
+  #contact-us {
+    width: 100%;
+  }
+
+  .business-info, #booking {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .background {
+    width: 100%;
+  }
+
+  #contact-container {
+    max-width: 100%;
+  }
+  #contact-booking-container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .google-map {
+    max-width: 80%;
   }
 }
