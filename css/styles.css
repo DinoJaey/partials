@@ -16,6 +16,15 @@
     --color-7: #F0A2F1;
 
     --text-color: #000000;
+
+    --color-accent: #FF89B9;  /* A pop of color for CTAs */
+    --color-gradient-1: #FDE2E7; /* For subtle gradients */
+    --color-gradient-2: #E8F1FD;
+    --text-color-light: #666666; /* For better text hierarchy */
+    
+    /* Add shadow variables for consistency */
+    --shadow-sm: rgba(0, 0, 0, 0.05) 0px 1px 2px;
+    --shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 html, body, button {
@@ -29,12 +38,25 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-x: scroll;
 }
 
 main {
-    justify-items: center;
     flex: 1;
+}
+
+.content-sizing {
+    max-width: 1200px;
+    margin: 15px;
+    padding: 20px 35px;
+    box-shadow: var(--shadow-md);
+}
+
+.content-one {
+
+}
+
+.content-two {
+    background-color: var(--color-2);
 }
 
 * {
@@ -105,22 +127,20 @@ nav ul.nav-dropdown li a {
     height: 32px;
 }
 
-.book-button:hover {
-    transform: translate(5px, -7px);
-}
-
 .book-now a {
     height: 32px;
     align-content: center;
+    align-items: center;
 }
 
 .book-button {
     text-decoration: none;
+    background-color: var(--color-6);
     height: 40px;
     width: 175px;
     text-align: center;
+    padding: 5px;
     color: var(--text-color);
-    padding: 0.5rem 1.25rem;
     font-size: 1.5rem;
     font-weight: 500;
     border-radius: 8px;
@@ -128,7 +148,7 @@ nav ul.nav-dropdown li a {
   }
 
   .book-button:hover {
-    background-color: var(--color-2);
+    background-color: var(--color-7);
   }
 
 nav li.nav-hover:hover, nav li.nav-hover:focus {
@@ -262,13 +282,13 @@ nav div.links-container {
 
 
 .footer-container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: auto;
 }
 
 .row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -526,6 +546,10 @@ nav div.links-container {
     }
 
     .mobile-button {
+        width: 100%;
+    }
+
+    .content-sizing {
         width: 100%;
     }
 }

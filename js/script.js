@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
     function handleInputChange() {
-        if (window.matchMedia('(max-width: 942px)').matches) { // Adjust breakpoint as needed
+        if (window.matchMedia('(max-width: 1024px)').matches) { // Adjust breakpoint as needed
 
         if (event.key === 'Enter') {
           input.checked = !input.checked; // Toggle the checked state

@@ -1,9 +1,11 @@
-
+  main {
+    justify-items: center;
+  }
   
   #contact-container {
     width: 100%;
     margin: 0 0 10px 0;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 15px;
     background-color: var(--color-2);
     border-radius: 3px;
@@ -111,6 +113,17 @@
   height: 250px;
   flex-shrink: 1;
 }
+
+#about-us-section {
+  margin-bottom: 100px;
+  padding: 35px 50px;
+  background: linear-gradient(135deg, #F4E6FF, #E8E6FF);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+
 
 @media (max-width: 1168px) {
   #contact-booking-container {
